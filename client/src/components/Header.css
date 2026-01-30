@@ -1,0 +1,78 @@
+.header {
+    background-color: rgb(67, 67, 77);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 10vh;
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+    z-index: 1;
+}
+
+.header h1 {
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.profile {
+    position: relative;
+    display: inline-block;
+    margin-right: 55px;
+    min-width: 120px;
+    /* right: 55px; */
+    
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 5px;
+    width: 100%;
+    /* transform: translateX(50%); */
+    background-color: rgb(67, 67, 77);
+    border: 1px solid #ccc;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+.profile:hover .list {
+    display: block;
+    
+}
+
+.list li {
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+}
+
+.list li:hover {
+    background-color: #313030;
+    text-decoration: none;
+    color: white;
+}
+
+.userName {
+    padding: 8px;
+    cursor: pointer;
+    background-color: rgb(67, 67, 77);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.userName:hover+.list {
+    display: block;
+}

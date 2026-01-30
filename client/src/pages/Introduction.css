@@ -1,0 +1,101 @@
+.intro-main-container{
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  /* background-color: rgb(178, 180, 180); */
+  margin-top: 10vh;
+  overflow: auto;
+  /* width: 100%; */
+
+}
+
+.useNow{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.useNow li{
+  list-style: none;
+  font-size: 28px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.lili{
+  display: flex;
+  flex-direction: row;
+}
+.goAuth{
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+  /* position: absolute;
+  right: 44.5%;
+  top: 13%; */
+}
+.user-instruction{
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.user-instruction li{
+  list-style: none;
+  font-size: 28px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.user-instruction-text{
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 43vh;
+  overflow: auto;
+}
+
+.mentor{
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+  justify-content: center;
+  position: absolute;
+  bottom: 10vh;
+  left: 22vw;
+  right: 22vw;
+  min-height: 115px;
+}
+
+.mentor-member{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 400px;
+  height: auto;
+  padding: 10px;
+  /* margin-left: 70px; */
+  position: relative;
+
+}
+.marr{
+  margin-right: 40px;
+}
+.marl{
+  margin-left: 40px;
+}
+.mentor-title{
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.mentor-detail{
+  list-style: none;
+  /* padding-left: 10px; */
+  margin-top: 5px;
+}
+.image {
+  width: 100px; 
+  height: 100px; 
+  object-fit: cover;
+  /* border-radius: 50%; */
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}

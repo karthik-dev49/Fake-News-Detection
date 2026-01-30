@@ -1,0 +1,71 @@
+/* Vertical Scrollbar Track */
+::-webkit-scrollbar {
+    width: 8px;
+    /* Adjust the width of the vertical scrollbar track */
+}
+
+/* Vertical Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+    /* Color of the vertical scrollbar handle on hover */
+}
+
+/* Vertical Handle */
+::-webkit-scrollbar-thumb {
+    background: #aaa;
+    /* Color of the vertical scrollbar handle */
+    border-radius: 6px;
+    /* Rounded corners of the vertical handle */
+    min-width: 8px;
+    /* Minimum width of the vertical scrollbar handle */
+}
+
+/* Vertical Track */
+::-webkit-scrollbar-track {
+    background: #eee;
+    /* Color of the vertical scrollbar track */
+    border-radius: 10px;
+    /* Rounded corners of the vertical track */
+}
+
+/* Vertical Handle when it's grabbing (clicked and being dragged) */
+::-webkit-scrollbar-thumb:active {
+    background: #666;
+    /* Color of the vertical scrollbar handle when active */
+}
+
+/* Horizontal Scrollbar Track */
+::-webkit-scrollbar {
+    height: 8px;
+    /* Adjust the height of the horizontal scrollbar track */
+}
+
+/* Horizontal Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+    /* Color of the horizontal scrollbar handle on hover */
+}
+
+/* Horizontal Handle */
+::-webkit-scrollbar-thumb {
+    background: #aaa;
+    /* Color of the horizontal scrollbar handle */
+    border-radius: 6px;
+    /* Rounded corners of the horizontal handle */
+    min-height: 8px;
+    /* Minimum height of the horizontal scrollbar handle */
+}
+
+/* Horizontal Track */
+::-webkit-scrollbar-track {
+    background: #eee;
+    /* Color of the horizontal scrollbar track */
+    border-radius: 10px;
+    /* Rounded corners of the horizontal track */
+}
+
+/* Horizontal Handle when it's grabbing (clicked and being dragged) */
+::-webkit-scrollbar-thumb:active {
+    background: #666;
+    /* Color of the horizontal scrollbar handle when active */
+}

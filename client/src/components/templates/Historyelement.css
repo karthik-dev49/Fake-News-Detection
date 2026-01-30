@@ -1,0 +1,242 @@
+
+.history-container {
+    /* background-color: cornflowerblue; */
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    /* border: 1px solid black; */
+    padding: 5px;
+    justify-content: space-between;
+    z-index: 0;
+}
+
+.history-container:hover {
+    background-color: rgb(129, 134, 134);
+}
+
+.news-container {
+    /* background-color: crimson; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+    /* Adjust this value based on your layout */
+    /* margin: 1px; */
+    margin-right: 7px;
+    font-size: 15px;
+    z-index: 1;
+    /* position: relative; */
+}
+
+
+.more {
+  /* position: relative;  */
+  display: inline-block;
+}
+.more-title{
+    cursor: pointer;
+}
+.more-list {
+  display: none;
+  position: fixed;
+  
+  /* top: 90%; */
+  right: 0;
+  left: 13vw;
+  width: 100px;
+  border-radius: 5px;
+  background-color: rgb(67, 67, 77);
+  border: 1px solid #ccc;
+  z-index: 10; /* Increase the z-index value */
+}
+
+.more:hover .more-list {
+  display: block;
+}
+
+.menuBtn-delete  {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  text-align: left;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: white;
+}
+.menuBtn-view{
+    display: block;
+  width: 100%;
+  padding: 8px;
+  text-align: left;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: white;
+}
+.menuBtn-delete:hover {
+  background-color: rgb(129, 134, 134);
+  /* border: 1px solid #ccc; */
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.menuBtn-view:hover {
+  background-color: rgb(129, 134, 134);
+  border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+
+/* Add this CSS to your Historyelement.css file or create a separate modal.css file */
+
+/* Modal */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  left: 0;
+  top: 0;
+  /* display: flex; */
+/* padding-left: 32%;
+padding-top: 15%; */
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+  background-color: rgba(0, 0, 0, 0.7); /* Black with a little bit of transparency */
+}
+
+.modal-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12%;
+}
+/* Modal Content */
+.real-modal-content {
+  background-color: lightgreen;
+  /* margin: 15% auto; */
+  /* padding: 20px; */
+
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(255, 255, 255,1);
+}
+.fake-modal-content {
+  background-color: pink;
+  
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(255, 255, 255,1);
+}
+
+/* Modal Header */
+.real-modal-header {
+  /* padding: 10px; */
+  /* background-color: #141914; */
+  /* padding-left: 10px;
+  padding-right: 10px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.fake-modal-header {
+  /* padding: 10px; */
+  /* background-color: #141914; */
+  /* padding-left: 10px;
+  padding-right: 10px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+/* .modal-header h2{
+    
+} */
+/* Modal Body */
+.real-modal-body {
+  /* background-color: #fff; */
+  /* border:1px solid #ccc; */
+  /* margin-top: 0; */
+  /* border-radius: 10px; */
+  /* padding: 10px; */
+  color: darkgreen;
+  height: 300px;
+  overflow: auto;
+}
+.fake-modal-body {
+  /* background-color: #fff; */
+  /* border:1px solid #ccc; */
+  /* margin-top: 0; */
+  /* border-radius: 10px; */
+  /* padding: 10px; */
+  color: red;
+  height: 300px;
+  overflow: auto;
+}
+/* Modal Footer */
+.real-modal-footer {
+  /* padding: 10px; */
+  /* background-color: #5cb85c; */
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(45, 45, 45);
+}
+.fake-modal-footer {
+  /* padding: 10px; */
+  /* background-color: #5cb85c; */
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(45, 45, 45);
+}
+/* Close Button */
+.real-modal-closeBtn {
+  color: red;
+  /* float: right; */
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.fake-modal-closeBtn {
+  color: red;
+  /* float: right; */
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.real-modal-closeBtn:hover,
+.fake-modal-closeBtn:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Make modal visible */
+.modal.visible {
+  display: block;
+}
+
+

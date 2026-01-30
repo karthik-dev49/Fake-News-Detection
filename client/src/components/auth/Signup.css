@@ -1,0 +1,171 @@
+.cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 50vh;
+    width: 50vw; */
+}
+
+.register-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #474545;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 40vw;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.register-container h2{
+font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.register-form{
+display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.userName-box{
+display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    margin-bottom: 1rem;
+}
+
+.userName-title{
+font-family:'Times New Roman', Times, serif;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left:9px ;
+    padding-top: 5px;
+    padding-right:8px ;
+    padding-bottom:5px ;
+    width: 80px;
+}
+
+.userName-input{
+ width: 250px;
+    height: 28px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    /* border: 1px solid black; */
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    /* padding-left: 0.5rem; */
+    padding-left: 6px;
+}
+
+.email-box{
+display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    margin-bottom: 1rem;
+}
+
+.email-title{
+font-family:'Times New Roman', Times, serif;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left:9px ;
+    padding-top: 5px;
+    padding-right:8px ;
+    padding-bottom:5px ;
+    width: 80px;
+}
+
+.email-input{
+ width: 250px;
+    height: 28px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    /* border: 1px solid black; */
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    /* padding-left: 0.5rem; */
+    padding-left: 6px;
+}
+
+.password-box{
+display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    margin-bottom: 1rem;
+}
+
+.password-title{
+font-family:'Times New Roman', Times, serif;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left:9px ;
+    padding-top: 5px;
+    padding-right:8px ;
+    padding-bottom:5px ;
+    width: 80px;
+}
+
+.password-input{
+width: 250px;
+    height: 28px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    /* border: 1px solid black; */
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    /* padding-left: 0.5rem; */
+    padding-left: 6px;
+}
+
+.register-button{
+border: 1px solid black;
+    border-radius: 20px;
+    background-color: #2c2f2c;
+    color: white;
+    font-size: 20px;
+    /* margin-bottom: 1rem; */
+    cursor: pointer;
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.register-button:hover{
+background-color: #474545;
+}
+
+
+
+.registration-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(140, 134, 134, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

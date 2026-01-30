@@ -1,0 +1,35 @@
+.nav-bar{
+    background-color: rgb(53, 53, 54);
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* padding: 0 1rem; */
+    height: 6.4%;
+    position: sticky;
+    /* width: 85vw; */
+    top: 0;
+    /* z-index: 100; */
+    margin-top: 10vh;
+    padding-left: 11px;
+    color: white;
+    text-decoration: none;
+}
+.home-containerTab{
+cursor: pointer;
+/* margin-left: 12px; */
+}
+
+
+.home-modelTab{
+ margin-left: 30px;
+ cursor: pointer;
+}
+.active-tab {
+  background-color: #eee; /* Set your desired background color for the active tab */
+  color: #333;
+  padding: 5px;
+
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}

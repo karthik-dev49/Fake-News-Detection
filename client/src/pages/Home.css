@@ -1,0 +1,433 @@
+body {
+    margin: 0;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.home{
+    display: flex;
+    flex-direction: row;
+}
+.main-container {
+    margin: 0;
+    padding: 0;
+    width: 85vw;
+    position: relative;
+    z-index: 1;
+    /* background-color: aqua; */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #837e7e;
+    align-items: flex-start;
+    /* margin-top: 10vh; */
+    height: 72.6vh;
+    /* z-index: 2; */
+    overflow: auto;
+    width: 84vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+}
+
+.historyBox {
+    background-color: rgb(101, 94, 92);
+    width: 15vw;
+    height: 80vh;
+    color: white;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    position: relative;
+    z-index: 2;
+}
+
+.history-title {
+    background-color: rgb(53, 53, 54);
+    height: 8%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid white; */
+    /* border-radius: 5px; */
+    /* margin-left: 30px;
+    margin-right: 30px; */
+    /* margin-top: 15px;
+    margin-bottom: 9px; */
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+.history-entity {
+    list-style: none;
+    /* background-color: rgb(101, 94, 92); */
+    height: 91%;
+position: relative;
+    /* Set a fixed height for the scrollable div */
+    overflow: auto;
+    /* Enable scrolling within the div */
+    /* padding: 2px; */
+    /* position: absolute; */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+
+
+.datasetBox {
+    width: 100%;
+    
+}
+.dataset-title-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(53, 53, 54);
+    /* margin-left: 40px;
+    margin-right: 40px; */
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.dataset-title {
+    /* height: 8%; */
+    top: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 19px;
+    /* padding: 15px; */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    margin-left: 40px;
+}
+
+.t {
+    margin-right: 40px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.toggle-slider {
+    display: flex;
+    width: 70px;
+    /* Adjust the width as needed */
+    height: 30px;
+    /* Adjust the height as needed */
+    background-color: #ccc;
+    /* Background color of the slider */
+    border-radius: 15px;
+    /* Make it round */
+    position: relative;
+    transition: background-color 0.3s ease;
+
+
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    display: none;
+    /* Hide the actual checkbox */
+}
+
+input[type="checkbox"]+.toggle-slider {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+input[type="checkbox"]:checked+.toggle-slider {
+    background-color: #4caf50;
+    /* Change background color when checked */
+    justify-content: left;
+}
+
+.datasetType {
+    display: flex;
+    align-items: center;
+    padding-bottom: 2px;
+    padding-left: 7px;
+    padding-right: 6px;
+}
+
+.toggle-slider:before {
+    content: '';
+    position: absolute;
+    width: 26px;
+    /* Width of the slider button */
+    height: 26px;
+    /* Height of the slider button */
+    background-color: white;
+    /* Color of the slider button */
+    border-radius: 50%;
+    /* Make it round */
+    /* top: 2px; */
+    left: 4px;
+    transition: transform 0.3s ease;
+}
+
+input[type="checkbox"]:checked+.toggle-slider:before {
+    transform: translateX(37px);
+    /* Move the slider button to the left when checked */
+}
+
+
+.dataset-wrapper {
+    /* background-color: rgb(105, 103, 102); */
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 15px; */
+    /* margin: auto; */
+   padding-top: 15px;
+   padding-bottom: 15px;
+}
+
+.option-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items:start; */
+    margin-left: 40px;
+    height: 140px;
+    /* padding-top: 5px; */
+    /* margin-top: px; */
+}
+
+.dataset-option-title {
+    background-color: rgb(53, 53, 54);
+    color: white;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    font-size: 16px;
+    font: weight 1px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 5px;
+}
+
+.dataset-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 60px;
+    min-width: 200px;
+}
+
+
+.dataset-options-btns {
+    display: flex;
+    align-items: center;
+    background-color: rgb(92, 92, 92);
+    color: white;
+    min-width: 190px;
+    font-family: cursive;
+    padding-left: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    font-size: 14px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 100%;
+}
+
+.dataset-options-btns:hover {
+    background-color: #413f3f;
+}
+
+.count-tuples {
+    margin-top: 7px;
+    padding: 7px;
+    /* border: 1px solid white; */
+    background-color: rgb(92, 92, 92);
+    border-radius: 5px;
+    color: white;
+}
+.count-tuples span {
+    margin-left: 40px;
+}
+
+.dataset-entity {
+    /* background-color: burlywood; */
+    display: flex;
+    justify-content: grid;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 40px;
+    /* border: 1px solid black; */
+    width: 100%;
+    overflow: auto;
+    height: 140px;
+    margin-left: 180px;
+}
+
+.all-models{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #837e7e;
+    align-items: flex-start;
+    /* margin-top: 10vh; */
+    height: 72.6vh;
+    /* z-index: 2; */
+    overflow: auto;
+    width: 84vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+}
+
+
+
+.ii{
+    width: 100%;
+}
+.predictionBox {
+    /* background-color: rgb(53, 53, 54); */
+    display: flex;
+    flex-direction: column;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.prediction-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(53, 53, 54);
+    color: white;
+    font-size: 18px;
+    padding-left: 40px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+/* General styles for the prediction section */
+.prediction-section {
+    width: 100%;
+    /* background-color: #4c4949; */
+    display: flex;
+    flex-direction: row;
+    /* height: 140px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: first baseline;
+    justify-content: space-between;
+    /* padding: 40px; */
+    padding-top: 30px;
+    padding-bottom: 12px;
+}
+
+.messageBox {
+    /* width: 100%; */
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2d2d2d;
+    padding: 0 15px;
+    border-radius: 10px;
+    border: 1px solid rgb(63, 63, 63);
+    margin-left: 40px;
+    /* margin-right: 100px; */
+  }
+  .messageBox:focus-within {
+    border: 1px solid rgb(110, 110, 110);
+  }
+  #messageInput {
+    width: 900px;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    color: white;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  #messageInput:focus ~ #sendButton svg path,
+  #messageInput:valid ~ #sendButton svg path {
+    fill: #3c3c3c;
+    stroke: white;
+  }
+  
+  #sendButton {
+    width: fit-content;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  #sendButton svg {
+    height: 18px;
+    transition: all 0.3s;
+  }
+  #sendButton svg path {
+    transition: all 0.3s;
+  }
+  #sendButton:hover svg path {
+    fill: #3c3c3c;
+    stroke: white;
+  }
+  
+/* Styles for the prediction output container */
+.prediction-output {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 40px;
+    margin-left: 40px;
+    /* margin-top: 34px; */
+    /* height: 53px; */
+    /* font-size: 20px; */
+    width: 300px;
+    /* Adjust the width as needed */
+}
+
+/* Styles for the detection result */
+.detectionResult {
+    padding-left: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: rgb(181, 180, 180);
+}
+
+/* Styles for the "How prediction happened?" link */
+.detail-report a {
+    color:white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.detail-report a:hover {
+    text-decoration: underline;
+}

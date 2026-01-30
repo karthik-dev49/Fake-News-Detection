@@ -1,0 +1,61 @@
+.headline {
+    background-color: rgb(53, 53, 54);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    /* Adjust the number of lines before showing ellipsis */
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.copyBtn{
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top:20px;
+    opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; 
+}
+
+.news {
+    padding: 4px;
+    padding-right: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    /* Adjust the number of lines before showing ellipsis */
+}
+.dataset-news:hover .copyBtn {
+  opacity: 1; /* Show copyBtn when .dataset-news is hovered */
+}
+.copyBtn img{
+    width: 15px;
+    height: 15px;
+}
+.dataset-news {
+    background-color: rgb(98, 98, 98);
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    font-weight: lighter;
+    /* padding: 4px; */
+    margin-right: 4px;
+    min-width: 250px;
+    height: 120px;
+    position: relative;
+}
+.author {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
+    /* padding-bottom: 3px; */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    /* margin-top: 10px; */
+}
